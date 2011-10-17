@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="teamk.glasgowbusfinder"
+	android:versionCode="1"
+	android:versionName="1.0">
+	<application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+		<uses-library android:name="com.google.android.maps" />  
+		
+		<!-- Register a receiver for a bus service alarm -->
+		<receiver android:name=".alerts.BusDueAlert" />
+		
+		<activity android:label="@string/app_name" android:name=".SplashActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<!-- Sub-activities -->
+		<activity android:label="@string/findstop_title" android:name=".FindStopActivity" />
+		<activity android:label="@string/findservice_title" android:name=".FindServiceActivity" />
+		<activity android:label="@string/findstopresults_title" android:name=".FindStopResultsActivity" />
+		<activity android:label="@string/findplaceresults_title" android:name=".FindPlaceResultsActivity" />
+		<activity android:label="@string/neareststopresults_title" android:name=".NearestStopActivity" />
+		<activity android:label="@string/favourites_title" android:name=".FavouritesActivity" />
+		<activity android:label="@string/departures_title" android:name=".DeparturesActivity" />
+		<activity android:label="@string/map_title" android:name=".StopMapActivity" />
+		<activity android:label="@string/stop_info_title" android:name=".StopInfoActivity" />
+		<activity android:label="@string/alerts_title" android:name=".AlertsActivity" />
+		<activity android:label="@string/alerts_preferences_title" android:name=".ui.preferences.AlertsPreferencesActivity" />
+		<activity android:label="@string/map_preferences_title" android:name=".ui.preferences.MapPreferencesActivity" />
+		<activity android:label="@string/stopinfo_preferences_title" android:name=".ui.preferences.StopInfoPreferencesActivity" />
+		<activity android:label="@string/tabbed_stop_title" android:name=".TabbedStop_DeparturesActivity" />
+		<activity android:label="@string/tabbed_stop_title" android:name=".TabbedStop_InfoActivity" />
+		<activity android:label="@string/tabbed_stop_title" android:name=".TabbedStopActivity" />
+		<activity android:label="@string/tabbed_stop_title" android:name=".TabbedSearchActivity" />
+	</application>
+	
+	<uses-sdk android:minSdkVersion="4" />
+	
+	<!-- Application permissions -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+ 	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+</manifest> 
