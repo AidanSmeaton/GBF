@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10dip" >
+
+	<EditText
+		android:id="@+id/amend_alert_text"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:hint="@string/amend_alert_hint"
+		android:inputType="text"
+		android:layout_marginTop="5dp"
+		android:onClick="searchClicked" />
+		
+	<LinearLayout
+	android:layout_width="wrap_content"
+	android:orientation="horizontal"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/amend_alert_text"
+		android:layout_centerInParent="true"
+	>
+	<Button
+		android:id="@+id/amend_alert_change"
+		android:text="@string/change"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/amend_alert_text" />
+		
+	<Button
+		android:id="@+id/amend_alert_cancel"
+		android:text="@string/cancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/amend_alert_text"/>
+		
+		</LinearLayout>
+</RelativeLayout>

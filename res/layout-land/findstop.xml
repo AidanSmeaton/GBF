@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Find Stop
+
+This layout is for the FindStop activity. Provides the user
+with several ways to search for a bus stop.
+
+Author: Euan Freeman
+Email: euan04@gmail.com
+
+Author: Aidan Smeaton
+-->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_gravity="center_vertical"
+	android:background="@drawable/gradient_dark" >
+	<!-- Search bar -->
+	<EditText
+		android:id="@+id/findstop_edittext_search"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:hint="@string/findstop_hint"
+		android:inputType="text"
+		android:layout_marginTop="5dp"
+		android:drawableRight="@drawable/ic_menu_search"
+		android:onClick="searchClicked" />
+	<!-- Radio Buttons -->	
+	<RadioGroup
+	  android:id="@+id/findstop_radio_select"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/findstop_edittext_search"
+      android:orientation="horizontal">
+      <RadioButton android:id="@+id/radio_place"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/place_postcode"
+          android:textSize="14dp" />
+      <RadioButton android:id="@+id/radio_stop"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/bus_stops"
+          android:textSize="14dp" />
+    </RadioGroup>
+    <!-- Check boxes -->
+    <TableLayout
+    	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/findstop_radio_select" >
+	    <TableRow>
+		    <CheckBox android:id="@+id/checkbox_stopnumber"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:visibility="invisible"
+		        android:text="Stop Number" />
+            <CheckBox android:id="@+id/checkbox_stopdescription"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Stop Description"
+		        android:visibility="invisible" />
+	    </TableRow><TableRow>
+	    	<CheckBox android:id="@+id/checkbox_street"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Street"
+		        android:visibility="invisible" />
+		    <CheckBox android:id="@+id/checkbox_town"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Town"
+		        android:visibility="invisible" />
+		</TableRow><TableRow>        
+		</TableRow>
+    </TableLayout>
+</RelativeLayout>

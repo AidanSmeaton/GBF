@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center" >
+	<!-- Row 1 -->
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal" >
+		<ImageView
+			android:id="@+id/main_button_findstop"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_findstop"
+			android:onClick="findStopClicked"
+			android:focusable="true"/>
+		<ImageView
+			android:id="@+id/main_button_findservice"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_findservice"
+			android:onClick="findServiceClicked"
+			android:focusable="true" />
+	</TableRow>
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal" >
+		<TextView
+			android:text="@string/findstop_title"
+			android:gravity="center" />
+		<TextView
+			android:text="@string/findservice_title"
+			android:gravity="center_horizontal" />
+	</TableRow>
+	<!-- Row 2 -->
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center" >
+		<ImageView
+			android:id="@+id/main_button_neareststop"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_neareststop"
+			android:onClick="nearestStopClicked"
+			android:focusable="true" />
+		<ImageView
+			android:id="@+id/main_button_map"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_map"
+			android:onClick="mapClicked"
+			android:focusable="true" />
+	</TableRow>
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal" >
+		<TextView
+			android:text="@string/neareststop_title"
+			android:gravity="center" />
+		<TextView
+			android:text="@string/map_title"
+			android:gravity="center_horizontal" />
+	</TableRow>
+	<!-- Row 3 -->
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center" >
+		<ImageView
+			android:id="@+id/main_button_favourites"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_favourites"
+			android:onClick="favouritesClicked"
+			android:focusable="true" />
+		<ImageView
+			android:id="@+id/main_button_alerts"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_alerts"
+			android:onClick="alertsClicked"
+			android:focusable="true" />
+	</TableRow>
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal" >
+		<TextView
+			android:text="@string/favourites_title"
+			android:gravity="center" />
+		<TextView
+			android:text="@string/alerts_title"
+			android:gravity="center_horizontal" />
+	</TableRow>
+</TableLayout>

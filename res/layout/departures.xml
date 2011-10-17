@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Departures
+
+This layout is for the Departures activity. Displays a
+list of expected services at the stop.
+
+Author: Euan Freeman
+Email: euan04@gmail.com
+-->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+	
+	<LinearLayout
+		android:id="@+id/departure_refresh"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/departures_refresh"
+		android:focusable="true"
+		android:onClick="departuresRefreshClick"
+		android:gravity="center_horizontal" >
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_menu_refresh" />
+	</LinearLayout>
+	
+	<!-- List view -->
+	<ListView
+		android:id="@+id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/departure_refresh" />
+		
+	<TextView
+		android:id="@+id/android:empty"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:text="@string/departures_empty"
+		android:textSize="20sp"
+		android:gravity="center"
+		android:layout_below="@id/departure_refresh" />
+</RelativeLayout>

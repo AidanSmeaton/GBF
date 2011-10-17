@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 
+		Defines the table names and column names.
+	    Allows changes to be made to database schema
+	    without having to fix query strings.
+	-->
+	
+	<!-- Tables -->
+	<string name="db_table_busstops">busstops</string>
+	<string name="db_table_subwaystations">subwaystations</string>
+	<string name="db_table_stopservices">stopservices</string>
+	<string name="db_table_alert">alert</string>
+	
+	<!-- busstops -->
+	<string name="db_busstops_StopCode">StopCode</string>
+	<string name="db_busstops_Longitude">Longitude</string>
+	<string name="db_busstops_Latitude">Latitude</string>
+	<string name="db_busstops_Name">StopName</string>
+	<string name="db_busstops_Indicator">StopIndicator</string>
+	<string name="db_busstops_Landmark">StopLandmark</string>
+	<string name="db_busstops_Street">StopStreet</string>
+	<string name="db_busstops_Locality">StopLocality</string>
+	<string name="db_busstops_Favourite">StopFavourite</string>
+	<string name="db_busstops_Alias">Alias</string>
+	
+	<!-- stopservices -->
+	<string name="db_stopservices_StopCode">StopCode</string>
+	<string name="db_stopservices_ServiceID">ServiceID</string>
+	
+	<!-- subwaystations -->
+	<string name="db_subwaystations_Name">StopName</string>
+	<string name="db_subwaystations_Longitude">Longitude</string>
+	<string name="db_subwaystations_Latitude">Latitude</string>
+	<string name="db_subwaystations_ParkAndRide">ParkAndRide</string>
+	<string name="db_subwaystations_BusInterchange">BusInterchange</string>
+	<string name="db_subwaystations_RailInterchange">RailInterchange</string>
+	
+	<!--  alert -->
+	<string name="db_alert_Identifier">_id</string>
+	<string name="db_alert_Service">service</string>
+	<string name="db_alert_Destination">destination</string>
+	<string name="db_alert_StopCode">stopcode</string>
+	<string name="db_alert_Time">time</string>
+	<string name="db_alert_MinutesBefore">minutesbefore</string>
+</resources>

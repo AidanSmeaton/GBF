@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item
+		android:id="@+id/busstopmenu_map"
+		android:title="@string/view_on_map"
+		android:icon="@drawable/ic_menu_mapmode" />
+	
+	<item
+		android:id="@+id/busstopmenu_favourite"
+		android:title="@string/add_favourite"
+		android:icon="@drawable/ic_menu_star" />
+		
+	<item
+		android:id="@+id/busstopmenu_alias"
+		android:title="@string/add_alias"
+		android:icon="@drawable/ic_menu_edit" />
+	
+	<item
+		android:id="@+id/busstopmenu_information"
+		android:title="@string/information"
+		android:icon="@drawable/ic_menu_info_details" />
+	
+	<item
+		android:id="@+id/busstopmenu_preferences"
+		android:title="@string/preferences"
+		android:icon="@drawable/ic_menu_preferences" />
+</menu>

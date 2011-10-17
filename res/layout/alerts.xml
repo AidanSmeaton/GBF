@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<!-- Header -->
+	<RelativeLayout
+		android:id="@+id/alerts_header"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/gradient_red"
+		android:padding="5dp" >
+		<TextView
+			android:text="@string/alerts_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/white"
+			android:textSize="32sp" />
+	
+		<DigitalClock
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="5dip"
+			android:textColor="@color/white"
+			android:textSize="22sp" />
+	</RelativeLayout>
+	
+	<ListView
+		android:id="@+id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:descendantFocusability="blocksDescendants"
+		android:focusableInTouchMode="false"
+		android:focusable="false"
+		android:layout_below="@id/alerts_header" />
+		
+	<TextView
+		android:id="@+id/android:empty"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/alerts_empty"
+		android:textSize="20sp"
+		android:gravity="center"
+		android:layout_below="@id/alerts_header" />
+</RelativeLayout>

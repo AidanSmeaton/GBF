@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Timetable: Header
+
+This layout is the header for the Timetable activity.
+
+Author: Euan Freeman
+Email: euan04@gmail.com
+-->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/green1"
+	android:padding="5dp" >
+	<TextView
+		android:id="@+id/timetable_textview_title"
+		android:text="XX"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:textColor="@color/white"
+		android:textSize="32sp" />
+		
+	<TextView
+		android:id="@+id/timetable_textview_destination"
+		android:text="Destination"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/timetable_textview_title"
+		android:layout_alignParentLeft="true"
+		android:textColor="@color/white"
+		android:textSize="18sp" />
+		
+	<TextView
+		android:id="@+id/timetable_textview_time"
+		android:text="xx:xx"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/timetable_textview_title"
+		android:layout_alignBaseline="@id/timetable_textview_title"
+		android:layout_marginLeft="5dip"
+		android:textColor="@color/white"
+		android:textSize="20sp" />
+
+	<DigitalClock
+		android:text=""
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="5dip"
+		android:textColor="@color/white"
+		android:textSize="22sp" />
+</RelativeLayout>

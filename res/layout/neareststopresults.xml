@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+NearestStopResults
+
+This layout is for the FindStopResults activity. Displays the
+nearest stops in a list.
+
+Author: Aidan Smeaton
+-->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<!-- Header -->
+	<RelativeLayout
+		android:id="@+id/neareststopresults_header"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/gradient_blue"
+		android:padding="5dp" >
+		<TextView
+			android:id="@+id/neareststopresults_count"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:text=""
+			android:textColor="@color/white"
+			android:textSize="18sp" />
+	</RelativeLayout>
+	
+	<!-- List view -->
+	<ListView
+		android:id="@+id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:descendantFocusability="blocksDescendants"
+		android:focusableInTouchMode="false"
+		android:focusable="false"
+		android:layout_below="@id/neareststopresults_header" />
+		
+	<TextView
+		android:id="@+id/android:empty"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/neareststopresults_empty"
+		android:textSize="20sp"
+		android:gravity="center"
+		android:layout_below="@id/neareststopresults_header" />
+</RelativeLayout>
+
+

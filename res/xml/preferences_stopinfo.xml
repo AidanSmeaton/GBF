@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+	<PreferenceCategory
+		android:title="@string/stop_info_title" >
+		<CheckBoxPreference
+			android:title="@string/services_on_top"
+			android:defaultValue="false"
+			android:summary="@string/services_on_top_summary"
+			android:key="pref_stopInfoServicesOnTop" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/departures_title" >
+		<CheckBoxPreference
+			android:title="@string/show_time_until_arrival"
+			android:defaultValue="false"
+			android:summary="@string/show_time_until_arrival_summary"
+			android:key="pref_departureTimeUntilArrival" />
+	</PreferenceCategory>
+</PreferenceScreen>

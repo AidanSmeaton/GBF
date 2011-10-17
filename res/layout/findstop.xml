@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Find Stop
+
+This layout is for the FindStop activity. Provides the user
+with several ways to search for a bus stop.
+
+Author: Euan Freeman
+Email: euan04@gmail.com
+
+Author: Aidan Smeaton
+-->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_gravity="center_vertical" >
+	
+	<!-- Search bar -->
+	<EditText
+		android:id="@+id/findstop_edittext_search"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:hint="@string/findstop_hint"
+		android:inputType="text"
+		android:layout_marginTop="5dp"
+		android:drawableRight="@drawable/ic_menu_search"
+		android:onClick="searchClicked" />
+	<!-- Radio Buttons -->	
+	<RadioGroup
+	  android:id="@+id/findstop_radio_select"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/findstop_edittext_search"
+      android:orientation="horizontal">
+      <RadioButton android:id="@+id/radio_place"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/place_postcode" />
+      <RadioButton android:id="@+id/radio_stop"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/bus_stops" />
+    </RadioGroup>
+    <!-- Check boxes -->
+    <CheckBox android:id="@+id/checkbox_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findstop_radio_select"
+        android:visibility="invisible"
+        android:text="Street" />
+    <CheckBox android:id="@+id/checkbox_town"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_street"
+        android:visibility="invisible"
+        android:text="Town" />
+    <CheckBox android:id="@+id/checkbox_stopdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_town"
+        android:visibility="invisible"
+        android:text="Stop Description" />
+    <CheckBox android:id="@+id/checkbox_stopnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox_stopdescription"
+        android:visibility="invisible"
+        android:text="Stop Number" />
+</RelativeLayout>

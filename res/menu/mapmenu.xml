@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+		android:id="@+id/mapmenu_currentlocation"
+		android:title="@string/current_location"
+		android:icon="@drawable/ic_menu_mylocation" />
+	<item
+		android:id="@+id/mapmenu_mapmode"
+		android:title="@string/toggle_map_mode"
+		android:icon="@drawable/ic_menu_mapmode" />
+	<item
+		android:id="@+id/mapmenu_key"
+		android:title="@string/map_key"
+		android:icon="@drawable/ic_menu_info_details" />
+	<item
+		android:id="@+id/mapmenu_neareststop"
+		android:title="@string/mapmenu_neareststop"
+		android:icon="@drawable/ic_menu_mylocation" />
+	<item
+		android:id="@+id/mapmenu_preferences"
+		android:title="@string/preferences"
+		android:icon="@drawable/ic_menu_preferences" />
+</menu>

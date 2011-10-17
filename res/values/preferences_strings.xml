@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="alert_notifications">Alert Notifications</string>
+<string name="alert_notifications_summary">Notify me before a bus is due</string>
+<string name="alert_time">Alert Time</string>
+<string name="alert_time_summary">How many minutes before bus is due to send alert</string>
+<string name="remove_alerts">Remove Alerts</string>
+<string name="automatically_remove">Automatically Remove</string>
+<string name="automatically_remove_summary">Remove expired alerts automatically</string>
+<string name="remove_after">Remove After</string>
+<string name="remove_after_summary">How many minutes to remove expired alerts after</string>
+<string name="show_subway_stations">Show Subway Stations</string>
+<string name="show_subway_stations_summary">Map will display Glasgow Underground stations on the map.</string>
+<string name="only_show_favourites">Only Show Favourites</string>
+<string name="only_show_favourites_summary">Only stops you have marked as favourite will appear on the map.</string>
+<string name="services_on_top">Services On Top</string>
+<string name="services_on_top_summary">Display list of services stop above bus stop information.</string>
+<string name="show_time_until_arrival">Show Arrival Time</string>
+<string name="show_time_until_arrival_summary">Show the time remaining until a bus is due to arrive</string>
+</resources>

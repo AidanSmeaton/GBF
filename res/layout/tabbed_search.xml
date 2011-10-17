@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<!-- Header -->
+	<RelativeLayout
+		android:id="@+id/findstop_header"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/gradient_blue"
+		android:padding="5dp" >
+		<TextView
+			android:text="@string/findstop_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/white"
+			android:textSize="32sp" />
+
+		<DigitalClock
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:textColor="@color/white"
+			android:textSize="22sp" />
+	</RelativeLayout>
+	
+	<!-- Tabbed view -->
+	<TabHost
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@android:id/tabhost"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+	        <!-- Padding -->
+	        <View
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="0.5dip"
+				android:background="#000" />
+			<!-- Tab widget -->
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="0dip"
+	            android:layout_marginRight="0dip"
+	            android:divider="@drawable/tab_divider" />
+	        <!-- Padding -->
+	        <View
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="2dip"
+				android:background="#696969" />
+			<View android:layout_width="fill_parent" android:layout_height="2dip"
+				android:background="#000" />
+			<!-- Tab contents -->
+	        <FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" />
+	    </LinearLayout>
+	</TabHost>
+</LinearLayout>

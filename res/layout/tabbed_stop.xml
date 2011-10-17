@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<!-- Header -->
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/gradient_green"
+	    android:padding="5dp" >
+	    <RelativeLayout
+	        android:id="@+id/busstop_header"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	            <TextView
+					android:id="@+id/busstop_title"
+					android:text="@string/busstop_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentLeft="true"
+					android:textColor="@color/white"
+					android:textSize="32sp"/>
+	            <DigitalClock
+					android:text=""
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="5dip"
+					android:textColor="@color/white"
+					android:textSize="22sp" />
+	    </RelativeLayout>
+	    <!-- Stop info -->
+	    <RelativeLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/busstop_header"
+			android:layout_marginTop="2dip" >
+	        <CheckBox
+	            android:id="@+id/busstop_imageview_favourite"
+	            android:button="@drawable/favouritescheckbox"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="1dp"
+	            android:onClick="favouritesClicked" />
+	        <TextView
+	            android:id="@+id/busstop_textview_stopname"
+	            android:text="Stop Name"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_toLeftOf="@id/busstop_imageview_favourite"
+	            android:textSize="18sp"
+	            android:textColor="@color/white"
+	            android:singleLine="true"
+	            android:ellipsize="marquee"
+	            android:marqueeRepeatLimit="marquee_forever"
+	            android:scrollHorizontally="true"
+	            android:focusable="true"
+	            android:focusableInTouchMode="true"
+	            android:freezesText="false"/>
+	        </RelativeLayout>
+	</RelativeLayout>
+
+	<!-- Tabbed view -->
+	<TabHost
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@android:id/tabhost"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+	        <!-- Padding -->
+	        <View
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="0.5dip"
+				android:background="#000" />
+			<!-- Tab widget -->
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="0dip"
+	            android:layout_marginRight="0dip"
+	            android:divider="@drawable/tab_divider" />
+	        <!-- Padding -->
+	        <View
+	        	android:layout_width="fill_parent"
+	        	android:layout_height="2dip"
+				android:background="#696969" />
+			<View android:layout_width="fill_parent" android:layout_height="2dip"
+				android:background="#000" />
+			<!-- Tab contents -->
+	        <FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" />
+	    </LinearLayout>
+	</TabHost>
+</LinearLayout>

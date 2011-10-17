@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="5dip" >
+	
+	<ImageView
+		android:id="@+id/neareststopresults_stopimage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:src="@drawable/alerts_ic_stop"
+		android:layout_marginRight="5dip" />
+	
+	<ImageView
+		android:id="@+id/neareststopresults_star"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/star_big_on"
+		android:layout_marginRight="5dip" />
+	
+	<TextView
+		android:id="@+id/neareststopresults_stopname"
+		android:text="StopName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20dp"
+		android:textColor="@color/white"
+		android:layout_toRightOf="@id/neareststopresults_stopimage" />
+		
+	<TextView
+		android:id="@+id/neareststopresults_stopstreet"
+		android:text="StopStreet"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/neareststopresults_stopname"
+		android:layout_marginTop="2dip"
+		android:textSize="14dp"
+		android:textColor="@color/white"
+		android:layout_toRightOf="@id/neareststopresults_stopimage" />
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_below="@id/neareststopresults_stopstreet"
+		android:layout_toRightOf="@id/neareststopresults_stopimage" >
+		
+		<TextView
+			android:id="@+id/neareststopresults_distance_you_num"
+			android:text="Distance from you"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="12dp"
+			android:textColor="@color/white"
+			android:gravity="center_vertical"
+			android:drawableRight="@drawable/mini_ic_person" />
+		
+		<TextView
+			android:id="@+id/neareststopresults_distance_place_num"
+			android:text="Distance from place"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="12dp"
+			android:textColor="@color/white"
+			android:layout_toRightOf="@id/neareststopresults_stopimage"
+			android:gravity="center_vertical"
+			android:drawableRight="@drawable/mini_ic_place" />
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Find Service
+
+This layout is for the FindService activity. Allows the user
+to search for a bus service.
+
+Author: Euan Freeman
+Email: euan04@gmail.com
+-->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_gravity="center_vertical" >
+	<!-- Header -->
+	<RelativeLayout
+		android:id="@+id/findservice_header"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/gradient_teal"
+		android:padding="5dp" >
+		<TextView
+			android:text="@string/findservice_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:textColor="@color/white"
+			android:textSize="32sp" />
+
+		<DigitalClock
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:textColor="@color/white"
+			android:textSize="22sp" />
+	</RelativeLayout>
+	<!-- Search bar -->
+	<EditText
+		android:id="@+id/findservice_edittext_search"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/findservice_header"
+		android:hint="@string/findservice_hint"
+		android:inputType="text"
+		android:layout_marginTop="5dp"
+		android:drawableRight="@drawable/ic_menu_search"
+		android:onClick="searchClicked" />
+</RelativeLayout>

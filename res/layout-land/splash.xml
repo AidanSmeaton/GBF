@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10dip"
+	android:gravity="center" >
+	<!-- Row 1 -->
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center" >
+		<ImageView
+			android:id="@+id/main_button_findstop"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_findstop"
+			android:text="@string/findstop_title"
+			android:onClick="findStopClicked" />
+		<ImageView
+			android:id="@+id/main_button_neareststop"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_neareststop"
+			android:text="@string/neareststop_title"
+			android:onClick="nearestStopClicked" />
+		<ImageView
+			android:id="@+id/main_button_favourites"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_favourites"
+			android:text="@string/favourites_title"
+			android:onClick="favouritesClicked" />
+		
+	</TableRow>
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal" >
+		<TextView
+			android:text="@string/findstop_title"
+			android:gravity="center" />
+		<TextView
+			android:text="@string/neareststop_title"
+			android:gravity="center_horizontal" />
+		<TextView
+			android:text="@string/favourites_title"
+			android:gravity="center_horizontal" />
+		
+	</TableRow>
+	<!-- Row 2 -->
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center" >
+		<ImageView
+			android:id="@+id/main_button_findservice"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_findservice"
+			android:text="@string/findservice_title"
+			android:onClick="findServiceClicked" />
+		<ImageView
+			android:id="@+id/main_button_map"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_map"
+			android:text="@string/map_title"
+			android:onClick="mapClicked" />
+		<ImageView
+			android:id="@+id/main_button_alerts"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/dash_icon_alerts"
+			android:text="@string/alerts_title"
+			android:onClick="alertsClicked" />
+	</TableRow>
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal" >
+		<TextView
+			android:text="@string/findservice_title"
+			android:gravity="center_horizontal" />
+		<TextView
+			android:text="@string/map_title"
+			android:gravity="center" />
+		<TextView
+			android:text="@string/alerts_title"
+			android:gravity="center_horizontal" />
+	</TableRow>
+</TableLayout>

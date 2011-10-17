@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<com.google.android.maps.MapView
+		android:id="@+id/mapview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:clickable="true"
+		android:apiKey="0ZTxue4ddm6o8bnsBWB9CBYXOH-H53ea5m3Hxjg" />
+		<!--
+			API Keys
+			Euan: 0EBIsapvIgq0O4UxI4hLdAWb341zDSv5man4rMA
+			Aidan: 0ZTxue4ddm6o8bnsBWB9CBYXOH-H53ea5m3Hxjg
+			Calum: 0JRkVyK5RNaH9QfX-k686a9etZ3ESRb7F7dzgbA
+			
+			ADD YOUR OWN! Copy and paste it to replace the android:apiKey value so
+			you can run the map on your own machine.
+		-->
+	<TextView
+		android:id="@+id/mapview_routelabel"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text=""
+		android:textColor="@color/white"
+		android:textStyle="bold"
+		android:background="#66000000"
+		android:gravity="center_horizontal"
+		android:padding="5dip" />
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10dip" >
+
+	<TableLayout
+		android:id="@+id/mapkey_table"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" >
+		<TableRow>
+			<ImageView
+				android:id="@+id/mapkey_image_stop"
+				android:src="@drawable/ic_mapkey_stop"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			
+			<TextView
+				android:id="@+id/mapkey_stop"
+				android:text="Bus stop"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:gravity="center_vertical" />
+		</TableRow><TableRow>
+		<ImageView
+			android:id="@+id/mapkey_image_favourite"
+			android:src="@drawable/ic_mapkey_favourite"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+			
+		<TextView
+			android:id="@+id/mapkey_favourite"
+			android:text="Favourite bus stop"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+			android:gravity="center_vertical" />
+		</TableRow><TableRow>
+		<ImageView
+			android:id="@+id/mapkey_image_selected"
+			android:src="@drawable/ic_mapkey_selected"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+			
+		<TextView
+			android:id="@+id/mapkey_selected"
+			android:text="Selected bus stop"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+			android:gravity="center_vertical" />
+		</TableRow><TableRow>
+		<ImageView
+			android:id="@+id/mapkey_image_subway"
+			android:src="@drawable/ic_mapkey_subway"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+			
+		<TextView
+			android:id="@+id/mapkey_subway"
+			android:text="Glasgow Underground station"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+			android:gravity="center_vertical" />
+		</TableRow><TableRow>
+		<ImageView
+			android:id="@+id/mapkey_image_your_location"
+			android:src="@drawable/ic_maps_indicator_current_position"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical" />
+			
+		<TextView
+			android:id="@+id/mapkey_your_location"
+			android:text="Your location"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dip"
+			android:gravity="center_vertical" />
+		</TableRow>
+	</TableLayout>
+	
+	<Button
+		android:id="@+id/mapkey_close"
+		android:text="@string/close"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/mapkey_table"
+		android:layout_centerHorizontal="true" />
+</RelativeLayout>

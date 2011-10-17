@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Identifiers for the values stored in this apps shared preferences -->
+<resources>
+	<!-- Find Stop -->
+	<string name="sharedPrefsName">glasgowbusfinder</string>
+	<string name="pref_findStopName">findStopName</string>
+	<string name="pref_findStreetName">findStreetName</string>
+	<string name="pref_findTownName">findTownName</string>
+	<string name="pref_findDescription">findDescription</string>
+	<string name="pref_searchByStop">searchByStop</string>
+	<string name="pref_findStopCode">findStopCode</string>
+	<string name="pref_findNumber">findStopNumber</string>
+	<string name="pref_lastSearch">lastSearch</string>
+	
+	<!-- Alerts -->
+	<string name="pref_alertsEnable">pref_alertsEnable</string>
+	<string name="pref_alertsBeforeTime">pref_alertsBeforeTime</string>
+	<string name="pref_alertsAutoRemove">pref_alertsAutoRemove</string>
+	<string name="pref_alertsAutoRemoveTime">pref_alertsAutoRemoveTime</string>
+	
+	<string name="pref_alertIndex">alertIndex</string>
+	<string name="pref_alertMinutes">alertMinutes</string>
+	
+	<!-- Map -->
+	<string name="pref_mapFavOnly">pref_mapFavOnly</string>
+	<string name="pref_mapShowSubway">pref_mapShowSubway</string>
+	
+	<!-- Stop Information -->
+	<string name="pref_stopInfoServicesOnTop">pref_stopInfoServicesOnTop</string>
+	
+	<!-- Departures -->
+	<string name="pref_departureTimeUntilArrival">pref_departureTimeUntilArrival</string>
+</resources>

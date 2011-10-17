@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:padding="5dip"
+	android:onClick="stopClicked"
+	android:background="@drawable/gradient_dark" >
+	<TextView
+		android:id="@+id/timetablerow_textview_time"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:text="00:00"
+		android:textSize="22dp"
+		android:textColor="@color/white" />
+	<TextView
+		android:id="@+id/timetablerow_textview_stop"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/timetablerow_textview_time"
+		android:layout_marginLeft="5dip"
+		android:text="Bus Stop"
+		android:textSize="22dp"
+		android:textColor="@color/white" />
+	<TextView
+		android:id="@+id/timetablerow_textview_street"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/timetablerow_textview_time"
+		android:layout_below="@id/timetablerow_textview_stop"
+		android:layout_marginLeft="5dip"
+		android:text="on a street"
+		android:textSize="16dp" />
+</RelativeLayout>

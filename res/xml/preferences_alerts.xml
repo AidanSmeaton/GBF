@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+	<PreferenceCategory
+		android:title="@string/alert_notifications" >
+		<CheckBoxPreference
+			android:title="@string/alert_notifications"
+			android:defaultValue="true"
+			android:summary="@string/alert_notifications_summary"
+			android:key="pref_alertsEnable" />
+			
+		<EditTextPreference  
+			android:dependency="pref_alertsEnable"
+			android:key="pref_alertsBeforeTime"
+			android:defaultValue="3"
+			android:title="@string/alert_time"
+			android:summary="@string/alert_time_summary" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/remove_alerts" >
+		<CheckBoxPreference
+			android:title="@string/automatically_remove"
+			android:defaultValue="true"
+			android:summary="@string/automatically_remove_summary"
+			android:key="pref_alertsAutoRemove" />
+			
+		<EditTextPreference  
+			android:dependency="pref_alertsAutoRemove"
+			android:key="pref_alertsAutoRemoveTime"
+			android:defaultValue="10"
+			android:title="@string/remove_after"
+			android:summary="@string/remove_after_summary" />
+	</PreferenceCategory>
+</PreferenceScreen>
